@@ -5,80 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>TechWave</title>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
-<body class="bg-[#1A0B2E]">
+<body class="bg-[#1A0B2E] text-white">
+
     <header class="flex justify-between items-center px-6 lg:px-20 py-6">
-        <h1 class="sm:text-[20px] md:text-[20px] text-[32px] text-white">TECH<span class="text-transparent bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text">WAVE</span>
-        </h1>
-        <nav class="hidden sm:hidden md:flex gap-8 text-white lg:flex gap-8 text-white">
-            <a href="">About</a>
-            <a href="">Episodes</a>
-            <a href="">Host</a>
+        <h1 class="text-2xl font-bold">TECH<span class="text-transparent bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text">WAVE</span></h1>
+        <nav class="hidden md:flex gap-8">
+            <a href="#" class="hover:text-purple-400">About</a>
+            <a href="#" class="hover:text-purple-400">Episodes</a>
+            <a href="#" class="hover:text-purple-400">Host</a>
         </nav>
-
-        <button class="hidden md:flex px-5 py-2 rounded-full text-[16px] text-white border-transparent  bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] hover:bg-linear-to-t hover:from-[#9100F8] hover:to-[#F7E93F] ">
-            Subscribe 
-            <img class="inline-block" src="assets/ArrowRight.png" alt="">
+        <button class="hidden md:block px-6 py-2 rounded-full bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] font-semibold hover:md-linear-to-t hover:from-[#9100F8] hover:to-[#F7E93F] hover:bg-linear-to-t hover:from-[#9100F8] hover:to-[#F7E93F]">
+            Subscribe →
         </button>
-        <img class="sm:block md:hidden lg:hidden" src="assets/hamburger-menu.png" alt="">
-
+        <div class="md:hidden">
+            <img src="assets/hamburger-menu.png" alt="Menu" class="w-8">
+        </div>
     </header>
-    <section class="sm:w-full md:w-full lg:w-full border-t-2 border-[#412567]">
-        <div class="absolute w-full h-full">
-            <img class="sm:w-full md:w-full lg:w-full" src="assets/hero-bg.png" alt="">
 
-        </div>
-        
-
-        <div class="absolute inset-0 flex justify-center items-center top-30">
-                <img class="absolute flex justify-center items-center top-2 w-25 h-25
-                md:absolute md:flex md:justify-center md:items-center md:top-13 md:w-55 md:h-55  
-                lg:absolute lg:flex lg:justify-center lg:items-center lg:top-16 lg:w-67 lg:h-67
-                xl:absolute xl:flex xl:justify-center xl:items-center xl:top-13 xl:w-82 xl:h-82" src="assets/hero-circle.png" alt="">
-                <div class="absolute top-2 left-60  md:justify-center md:items-center md:top-4 md:left-110 lg:top-18 lg:left-210  bg-[#00FF88] shadow-lg shadow-green-500/50 text-white text-[10px] md:text-[18px] font-semi-bold px-3 py-1 rounded-full ">
-                    NEW
-                    <div>
-                    <img class="absolute flex justify-center items-center top-3 right-12 w-full sm:w-40 
-                    md:absolute md:flex md:justify-center md:items-center md:top-13 md:w-55  
-                    lg:absolute lg:flex lg:justify-center lg:items-center lg:top-16 lg:right-20 lg:w-90 " src="assets/microphone.png" alt="">
-                    
-                    </div>
-                </div>
-
-
-                <div class="relative flex flex-col items-center justify-center text-center xl:mt-200 lg:mt-100 mb-120 px-4 py-20 md:py-32">
-
-                <h1 class="text-white text-4xl md:text-5xl lg:text-7xl font-bold mt-35">
-                    TechWave
-                </h1>
-
-                <p class="text-white text-sm sm:text-base md:text-lg opacity-80 mt-6">
-                    Your daily dose of tech insights, productivity hacks, and personal growth
-                </p>
-
-
-                <div class="flex flex-row items-center justify-center gap-3 w-full max-w-sm md:max-w-none mx-auto mt-10">
-                    <a href="" class="flex-1 md:flex-none text-[13px] md:text-sm bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] hover:bg-linear-to-t hover:from-[#9100F8] hover:to-[#F7E93F] text-white font-medium px-4 py-3 md:px-6 md:py-3 rounded-full flex items-center justify-center gap-2 hover:opacity-90 transition-opacity whitespace-nowrap">
-                        <img src="./assets/spotify.png" alt="Spotify" class="w-4 h-4 md:w-5 md:h-5 invert brightness-0">
-                        Listen On Spotify
-                    </a>
-                    <button class="flex-1 md:flex-none text-[13px] md:text-sm bg-transparent border border-[#00E676] text-[#00E676] font-medium px-4 py-3 md:px-6 md:py-3 rounded-full flex items-center justify-center gap-2 hover:bg-[#00E676] hover:text-black transition-colors group whitespace-nowrap">
-                        <svg class="w-4 h-4 md:w-5 md:h-5 group-hover:text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                        </svg>
-                        Subscribe
-                    </button>
-                    
-                </div>
+    <section class="relative flex flex-col items-center border-t border-[#412567] bg-no-repeat bg-center">
+        <div class="absolute w-full">
+                <img class="w-full md:w-full lg:w-full" src="assets/hero-bg.png" alt="">
+            </div>
+        <div class="relative ">
+            <div class="absolute top-2 right-2 md:top-10 md:right-18 lg:top-22 lg:right-40 lg:text-xl bg-[#00FF88] text-white text-xs font-bold px-3 py-1 rounded-full shadow-[0_0_15px_#00FF88] z-10 animate-pulse">
+                NEW
+            </div>
+            <div class="w-25 h-25 m-5 md:w-60 md:h-60 md:m-10 lg:w-96 lg:h-96 lg:m-22 lg:mr-21 ">
+                <img src="assets/hero-circle.png" alt="" class="flex items-center justify-center animate-pulse">
                 
+            </div>
+            <div class="w-13 md:w-30 lg:w-full relative bottom-28 -right-11 md:bottom-65 md:-right-15 lg:bottom-100 lg:-right-40">
+                <img src="assets/microphone.png" alt="" class="w-15 md:w-32 md:m-10 mb-[-60px] md:mb-[-100px] lg:mb-[-280px] z-10 animate-pulse">
+            </div>
         </div>
+        <h2 class="text-4xl md:text-6xl font-bold mb-5 lg:mb-10 z-10">TechWave</h2>
+        <p class="text-gray-300 text-center max-w-md mb-5 ml-2 mr-2 z-10">
+            Your daily dose of tech insights, productivity hacks, and personal growth.
+        </p>
         
-    </section>
+        <div class="flex flex-row items-center justify-center gap-2 md:gap-4 px-2 w-full max-w-md mx-auto mb-20 z-10">
     
+            <a href="#" class="flex-1 md:flex-none flex items-center justify-center gap-1 md:gap-2 px-3 md:px-8 py-3 rounded-full bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] font-semibold hover:md-linear-to-t hover:from-[#9100F8] hover:to-[#F7E93F] hover:bg-linear-to-t hover:from-[#9100F8] hover:to-[#F7E93F] font-bold text-white text-[11px] md:text-base whitespace-nowrap shadow-lg">
+                <img src="./assets/spotify.png" alt="Spotify" class="w-4 h-4 md:w-5 md:h-5 invert brightness-0">
+                    Listen On Spotify
+            </a>
+
+            <a href="#" class="flex-1 md:flex-none flex items-center justify-center gap-1 md:gap-2 px-3 md:px-8 py-3 rounded-full border border-[#00FF88] text-[#00FF88] font-bold text-[11px] md:text-base hover:bg-[#00FF88] hover:text-black transition-all duration-300 whitespace-nowrap">
+                <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+                    Subscribe
+            </a>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 text-center border-t border-[#412567]">
+    
+        <h3 class=" text-3xl md:text-5xl font-bold mb-6">About The Podcast</h3>
+        <p class="text-gray-400 max-w-3xl mx-auto leading-relaxed mb-16">
+            TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. 
+            We break down complex topics into digestible insights, explore productivity strategies 
+            that actually work, and share stories of personal growth from industry leaders.
+        </p>
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div>
+                <div class="text-[#00FF88] text-4xl font-bold">150K+</div>
+                <div class="text-gray-500 text-sm uppercase tracking-wider mt-2">Monthly Listeners</div>
+            </div>
+            <div>
+                <div class="text-[#00FF88] text-4xl font-bold">200+</div>
+                <div class="text-gray-500 text-sm uppercase tracking-wider mt-2">Episodes Published</div>
+            </div>
+            <div>
+                <div class="text-[#00FF88] text-4xl font-bold">4.9★</div>
+                <div class="text-gray-500 text-sm uppercase tracking-wider mt-2">Average Rating</div>
+            </div>
+            <div>
+                <div class="text-[#00FF88] text-4xl font-bold">50+</div>
+                <div class="text-gray-500 text-sm uppercase tracking-wider mt-2">Industry Experts</div>
+            </div>
+        </div>
+    </section>
+
 
 </body>
 </html>
